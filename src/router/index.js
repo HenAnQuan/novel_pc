@@ -18,12 +18,17 @@ const routes = [
   {
     path:"/nav1",
     name:"Nav1",
-    component:()=>import(/* webpackChunkName:"nav1-1" */ '../views/Nav1.vue')
+    component:()=>import(/* webpackChunkName:"nav1" */ '../views/Nav1.vue')
   },
   {
     path:"/nav1-1",
     name:"Nav1-1",
     component:()=>import(/* webpackChunkName:"nav1-1" */ '../views/Nav1-1.vue')
+  },
+  {
+    path:"/detail",
+    name:"Detail",
+    component:()=>import(/* webpackChunkName:"detail" */ '../views/Detail.vue')
   },
 ]
 

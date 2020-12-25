@@ -76,6 +76,7 @@
             <img
               :src="`http://statics.zhuishushenqi.com${book.cover}`"
               alt=""
+              @click="toDetail(book)"
             />
             <div class="book_Info">
               <h3 class="book_title">{{ book.title }}</h3>
@@ -131,10 +132,16 @@ export default {
       console.log(this.bookList);
     });
   },
-};
+  methods: {
+    toDetail(book){
+      this.$router.push({name:"Detail",query:{id:book._id}});
+    }
+  }
+}
+
 </script>
 
-<style>
+<style scoped>
 /* @import url(../assets/css/reset.css); */
 .floor {
   background-color: white;
@@ -245,7 +252,7 @@ export default {
 .book .book_Info img{
   width: 20px;
   height: 20px;
-  margin: 5px;
+  margin: 0px;
 }
 .book_title{
   font-size: 16px;
@@ -259,7 +266,7 @@ export default {
   -webkit-line-clamp: 2;
   line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-size: 14px;
+  font-size: 12px;
   margin: 5px 0;
 }
 .book_sort{
@@ -279,6 +286,7 @@ export default {
 .majorCate{
   padding: 3px;
   border:1px solid lightgray;
-  margin: 0 5px;
+  margin: 0 ;
+  font-size: 9px;
 }
 </style> 
