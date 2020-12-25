@@ -92,7 +92,6 @@
         </el-row>
       </div>
     </div>
-    <!-- <div v-if="epub.length == 0 || bookList.length == 0">数据还没加载过来</div> -->
   </div>
 </template>
 
@@ -136,18 +135,52 @@ export default {
 </script>
 
 <style>
+/* @import url(../assets/css/reset.css); */
 .floor {
   background-color: white;
   padding: 25px;
   margin-bottom: 20px;
   border-radius: 10px;
 }
+
+
+
 .el-carousel__item:nth-child(2n) {
   background-color: #99a9bf;
 }
 .el-carousel__item:nth-child(2n + 1) {
   background-color: #d3dce6;
 }
+/* .el-carousel__indicators{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(1, 1, 1, .3);
+}
+.el-carousel__indicators>.is-active{
+  background-color: rgb(255, 57, 85)
+}
+.el-carousel__indicator--horizontal{
+  padding: 0 !important;
+}
+.el-carousel__indicator{
+  flex:1;
+  border: 1px solide red;
+  display: flex;
+}
+.el-carousel__indicator>button{
+  width: 100%;
+  height: 50px;
+  background-color: rgba(1, 0, 0, 0);
+}
+.el-carousel__indicator:nth-child(1)>button:before{
+  content:"护苗绿书签活动2020";
+  color:white;
+  font-size: 15px;
+} */
+
+
+
 .notice {
   display: flex;
   flex-direction: column;
@@ -178,8 +211,8 @@ export default {
   color: rgb(255, 57, 85);
 }
 .notice > .recommend {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight:600;
   color: rgb(255, 57, 85);
 }
 
@@ -207,7 +240,7 @@ export default {
 .book img {
   width: 75px;
   height: 100px;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 .book .book_Info img{
   width: 20px;

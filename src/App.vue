@@ -1,7 +1,7 @@
 <template>
   <div style="background-color:rgb(245,245,245)">
     <Header style="padding-top:20px"/>
-    <div  style="width:80%;margin:0 auto;background-color:rgb(245,245,245);padding-top:25px">
+    <div  style="width:1024px;margin:0 auto;background-color:rgb(245,245,245);padding-top:25px">
       <router-view></router-view>
     </div>
     <Footer style="margin-top:50px"/>

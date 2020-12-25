@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-      <ul>
+      <ul class="footer_nav">
           <li><a href="">关于我们</a></li>
           <li><a href="">联系我们</a></li>
           <li><a href="">帮助中心</a></li>
@@ -24,22 +24,27 @@ export default {
 
 }
 </script>
-@import  from ''
+
 <style>
+/* @import url(../assets/css/reset.css);  */
     .footer{
         width: 100%;
         text-align: center;
-        /* display: flex;
-        align-items: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .footer>ul{
-        width: 800px;
+    .footer_nav{
+        /* width: 800px; */
         margin: 0 auto;
         display: flex;
         flex-direction: row;
         align-self: center;
     }
-    .footer>ul>li:not(:last-child){
+    .footer>ul,.footer>p,.footer>div{
+        margin: 5px 0;
+    }
+    .footer_nav>li:not(:last-child){
         margin-right: 20px;
     }
 </style>
